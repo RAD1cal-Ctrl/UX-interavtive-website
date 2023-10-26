@@ -1,0 +1,11 @@
+body {
+ background-color: lightblue;
+}
+h1 {
+ font-family: Arial, sans-serif;
+ color: darkblue;
+ text-align: center;
+}
+p {
+ border: 2px solid red;
+}
