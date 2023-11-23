@@ -10,6 +10,8 @@
 body{
     min-height: 100vh;
     background: url("#");
+    display: flex;
+    background-color: white;
 }
 
 .header{
@@ -24,13 +26,17 @@ body{
     align-items: center;
     z-index: 100;
 }
+/*----------------------------LOGO----------------------------*/
 
 .logo{
     font-size: 32px;
     color: white;
     font-weight: 700;
+    
 }
+/*----------------------------LOGO----------------------------*/
 
+/*----------------------------NAVBAR----------------------------*/
 .navbar a{
     font-size: 18px;
     color: white;
@@ -53,7 +59,81 @@ body{
 }
 
 .navbar a:hover::before{
-    width: 100%;
-    
-    
+    width: 100%;  
 }
+/*----------------------------NAVBAR----------------------------*/
+
+/*----------------------------FOOTER----------------------------*/
+
+body{
+    min-height: 100vh;
+    background: url("#");
+    display: flex;
+    background-color: white;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+footer{
+   position: relative;
+   width: 100%;
+   background-color: rgb(18, 82, 18);
+   min-height: 100px;
+   padding: 20px 50px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+
+footer .mediaIcons, footer .footerMenu{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10x 0;
+    flex-wrap: wrap;
+}
+
+.footer .mediaIcons li, footer .footerMenu li{
+    list-style: none;
+
+}
+
+.footer .mediaIcons li a, footer .footerMenu li a{
+    font-size: 2em;
+    color: white;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.footer .mediaIcons li a:hover{
+    transform: translateY(-10px);
+}
+
+footer .footerMenu li a{
+    font-size: 1.2em;
+    color: white;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.3s;
+    text-decoration: none;
+    opacity: 0.75;
+}
+
+footer .footerMenu a:hover{
+    opacity: 1;
+}
+
+footer p{
+    color: white;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 1.cm;
+}
+/*----------------------------FOOTER----------------------------*/
+
+
+
