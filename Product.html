@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gourmet Nibbles</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            text-align: center;
+        }
+
+        section.products {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px; /* Adjust the margin-top as needed */
+        }
+
+        .product-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .product {
+            width: 100%;
+            max-width: 400px;
+            margin: 69px;
+            text-align: center;
+        }
+
+        .product img {
+            width: 90%;
+            height: auto;
+        }
+
+        .price {
+            color: #4CAF50;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="#" class="logo">Gourmet Nibbles</a>
+        <nav class="navbar">
+            <a href="index.html" class="">Home</a>
+            <a href="#" class="">Recipes</a>
+            <a href="products.html" class="">Products</a>
+            <a href="#" class="">About Us</a>
+            <a href="#" class="">Contact</a>
+        </nav>
+    </header>
+
+    <section class="products">
+        <div class="product-container">
+            <div class="product">
+                <img src="nutty snack.png" alt="Nutty Snack">
+                <h2>Nutty Snack</h2>
+                <p>A delightful blend of assorted nuts, perfect for snacking.</p>
+                <p class="price">£4.99</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="nutty butter.png" alt="Nut Butter">
+                <h2>Nut Butter</h2>
+                <p>Smooth and creamy nut butter, ideal for spreading on toast or using in recipes.</p>
+                <p class="price">£7.99</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="granola.png" alt="Nutty Granola">
+                <h2>Nutty Granola</h2>
+                <p>Crunchy granola with a mix of nuts, seeds, and dried fruits for a healthy breakfast.</p>
+                <p class="price">£5.99</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <ul class="mediaIcons">
+            <li><a href='facebook'><ion-icon name="logo-facebook"></ion-icon></a></li>
+            <li><a href='instagram'><ion-icon name="logo-instagram"></ion-icon></a></li>
+            <li><a href='#tiktok'><ion-icon name="logo-tiktok"></ion-icon></a></li>
+            <li><a href='x'><ion-icon name="logo-twitter"></ion-icon></a></li>
+            <li><a href='linkedin'><ion-icon name="logo-linkedin"></ion-icon></a></li>
+        </ul>
+        <ul class="footerMenu">
+            <li><a href="index.html" class="">Home</a></li>
+            <li><a href="#" class="">Recipes</a></li>
+            <li><a href="products.html" class="">Products</a></li>
+            <li><a href="#" class="">About Us</a></li>
+            <li><a href="#" class="">Contact</a></li>
+        </ul>
+        <p>2023 All Right Reserved | Gourmet Nibbles</p>
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
