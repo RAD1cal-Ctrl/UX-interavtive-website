@@ -11,7 +11,7 @@ body{
     min-height: 100vh;
     background: url("#");
     display: flex;
-    background-color: white;
+    background-color: rgb(189, 139, 98);
 }
 
 .header{
@@ -62,6 +62,70 @@ body{
     width: 100%;  
 }
 /*----------------------------NAVBAR----------------------------*/
+
+/*----------------------------SECTION 1----------------------------*/
+
+.banner .bannerImage{
+    width: 100%;
+    object-fit: fill;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    filter: grayscale(50%);
+
+}
+/*TEXT*/
+.welcomeText{
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.welcomeText h1{
+    font-size: 62px;
+
+}
+.welcomeText p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: white;
+}
+/*TEXT*/
+
+/*BUTTON*/
+.bannerButton{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 25px 55px;
+    font-size: 25px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;   
+}
+.bannerButton:hover{
+    border: 1px solid white;
+    background: white;
+    transform: 0.3s;
+
+}
+
+/*BUTTON*/
+
+
+/*----------------------------SECTION 1----------------------------*/
+
+
+
+
+
+
+
+
 
 /*----------------------------FOOTER----------------------------*/
 
@@ -135,5 +199,44 @@ footer p{
 }
 /*----------------------------FOOTER----------------------------*/
 
+/*----------------------------RECIPE----------------------------*/
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px; /* Increased space at the bottom of the body */
+}
 
+.image-section {
+    text-align: center;
+    margin-top: 100px; /* Moved the image up the page */
+    position: relative;
+}
+
+.interactive-image {
+    width: 100%; /* Adjusted the width of the image */
+    max-width: 600px; /* Set a maximum width if necessary */
+    border-radius: 8px;
+}
+
+.interactive-button {
+    position: absolute;
+    top: 70%; /* Adjusted the vertical position of the button */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #4CAF50;
+    color: #ffffff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.interactive-button:hover {
+    background-color: #45a049;
+}
+/*----------------------------RECIPE----------------------------*/
 
