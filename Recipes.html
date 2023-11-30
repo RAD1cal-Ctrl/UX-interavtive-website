@@ -3,11 +3,60 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=#, initial-scale=1.0">
     <title>UX Website Project</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            text-align: center;
+        }
+
+        section.Recipes {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px; /* Adjust the margin-top as needed */
+        }
+
+        .Recipes-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .Recipes {
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+            margin: 10px; /* Adjust the margin as needed */
+        }
+
+        .Recipes img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 10px; /* Adjust the margin-bottom as needed */
+        }
+
+        button {
+            background-color: rgb(18, 82, 18);
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: rgb(18, 82, 18);
+        }
     </style>
 </head>
 
@@ -16,7 +65,8 @@
     <!-- LOGO -->
     <header class="header">
         <a href="index.html" class="logo">Gourmet Nibbles</a>
-    <!-- LOGO -->
+        <!-- LOGO -->
+
 
     <!-- NAVBAR -->
         <nav class="navbar">
@@ -26,17 +76,45 @@
             <a href="#" class="">About Us</a>
             <a href="#" class="">Contact</a>
         </nav>
+    </header>
     <!-- NAVBAR -->
     <main>
-        <header class="hero">
-            <div class="hero-container">
-                <div class="hero-text">
-                    <h1>Simple Nut Recipies</h1>
-                    <h4>Explore a Wide Range of Delicious Easy Meals</h4>
-                </div>
-            </div>
-        </header>
+            <section class="banner">
+        <img src="images/welcome page nuts.jpg" alt="Chef" class="bannerImage">
+        <div class="welcomeText">
+            <h1>Simple Nut Recipies</h1>
+            <br>
+            <h3>Explore a Wide Range of Delicious Easy Meals</h3>
+        </div>
+    </section>
     </main>
+    <section class="Recipies">
+        <div class="Recipes">
+            <div class="Recipes">
+                <img src="images/Baby buttermilk pancakes with sticky bananas & Brazils.png" alt="Baby buttermilk pancakes with sticky bananas & Brazils">
+                <h2>Baby buttermilk pancakes with sticky bananas & Brazils</h2>
+                <p>Pile 'em high - these simple and scrumptious buttermilk pancakes are guaranteed to be a real crowd pleaser</p>
+                <button>See recipes</button>
+            </div>
+
+            <div class="Recipies">
+                <img src="images/Banana & walnut loaf.png" alt="Banana & walnut loaf">
+                <h2>Banana & walnut loaf</h2>
+                <p>This homely and wholesome cake is also light and moist, with the natural sweetness of sticky bananas and the warm toastiness of nuts</p>
+                <button>See recipe</button>
+            </div>
+
+            <div class="Recipes">
+                <img src="images/Chocolate hazelnut ice cream cheesecake.png" alt="Chocolate hazelnut ice cream cheesecake">
+                <h2>Chocolate hazelnut ice cream cheesecake</h2>
+                <p>No one will guess that this easy, rich and creamy no-cook, make-ahead cheesecake uses only 4 ingredients - ideal for a dinner party</p>
+                <button>See recipe</button>
+            </div>
+        </div>
+    </section>
+
+    
+
 
     <!-- FOOTER -->
     <footer class="footer">
