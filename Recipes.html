@@ -7,56 +7,45 @@
     <title>UX Website Project</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        body {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
+            body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
-        header {
-            text-align: center;
-        }
+    .Recipes-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-top: 50px; /* Adjust the margin-top as needed */
+    }
 
-        section.Recipes {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin-top: 50px; /* Adjust the margin-top as needed */
-        }
+    .Recipes {
+        width: calc(50% - 20px); /* Adjust the width and margin as needed */
+        margin: 10px;
+        text-align: center;
+        box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    }
 
-        .Recipes-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
+    .Recipes img {
+        width: 100%; /* Keep images at 100% width within their container */
+        height: auto;
+    }
 
-        .Recipes {
-            width: 100%;
-            max-width: 400px;
-            text-align: center;
-            margin: 10px; /* Adjust the margin as needed */
-        }
+    button {
+        background-color: rgb(18, 82, 18);
+        color: #ffffff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+        margin-top: 10px;
+    }
 
-        .Recipes img {
-            width: 100%;
-            height: auto;
-            margin-bottom: 10px; /* Adjust the margin-bottom as needed */
-        }
-
-        button {
-            background-color: rgb(18, 82, 18);
-            color: #ffffff;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 16px;
-            margin-top: 10px;
-        }
-
-        button:hover {
-            background-color: rgb(18, 82, 18);
-        }
+    button:hover {
+        background-color: rgb(18, 82, 18);
+    }
     </style>
 </head>
 
@@ -78,18 +67,19 @@
         </nav>
     </header>
     <!-- NAVBAR -->
-    <main>
-            <section class="banner">
-        <img src="images/welcome page nuts.jpg" alt="Chef" class="bannerImage">
+    
+    <!-- BANNER -->
+    <section class="banner">
+        <img src="images/welcome page nuts.jpg" alt="Mixed Nuts" class="bannerImage">
         <div class="welcomeText">
-            <h1>Simple Nut Recipies</h1>
-            <br>
-            <h3>Explore a Wide Range of Delicious Easy Meals</h3>
+            <h1>Sample Recipes</h1>
         </div>
     </section>
-    </main>
-    <section class="Recipies">
-        <div class="Recipes">
+    <!-- BANNER -->
+
+    <!-- recipe -->
+    <section class="Recipes">
+        <div class="Recipes-container">
             <div class="Recipes">
                 <img src="images/Baby buttermilk pancakes with sticky bananas & Brazils.png" alt="Baby buttermilk pancakes with sticky bananas & Brazils">
                 <h2>Baby buttermilk pancakes with sticky bananas & Brazils</h2>
@@ -97,7 +87,7 @@
                 <button>See recipes</button>
             </div>
 
-            <div class="Recipies">
+            <div class="Recipes">
                 <img src="images/Banana & walnut loaf.png" alt="Banana & walnut loaf">
                 <h2>Banana & walnut loaf</h2>
                 <p>This homely and wholesome cake is also light and moist, with the natural sweetness of sticky bananas and the warm toastiness of nuts</p>
@@ -113,8 +103,7 @@
         </div>
     </section>
 
-    
-
+    <!-- recipe -->
 
     <!-- FOOTER -->
     <footer class="footer">
