@@ -71,18 +71,23 @@ body{
     background-size: cover;
     background-position: center;
     position: relative;
-    filter: grayscale(50%);
+    filter: grayscale(0%);
 
 }
 /*TEXT*/
 .welcomeText{
-    width: 90%;
+    width: 50%;
     color: white;
     position: absolute;
-    top: 35%;
+    top: 32%;
     left: 50%;
     transform: translate(-50%,-50%);
     text-align: center;
+    border: 5px solid rgb(18, 82, 18);
+    padding: 25px;
+    margin: 20px;
+    background-color: rgb(18, 82, 18);
+    opacity: .8;
 }
 .welcomeText h1{
     font-size: 62px;
@@ -100,17 +105,20 @@ body{
     display: inline-block;
     text-decoration: none;
     color: white;
-    border: 1px solid white;
-    padding: 25px 55px;
+    border: 5px solid white;
+    border-radius: 20px;
+    padding: 15px 55px;
     font-size: 25px;
     background: transparent;
     position: relative;
-    cursor: pointer;   
+    cursor: pointer;
+    transition: .3s;   
 }
 .bannerButton:hover{
     border: 1px solid white;
     background: white;
     transform: 0.3s;
+    color: rgb(18, 82, 18);
 
 }
 
