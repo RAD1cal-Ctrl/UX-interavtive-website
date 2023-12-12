@@ -253,6 +253,58 @@ p{
     margin-left: 250px;
   }
 
+/* ---------------------------- RECIPE 1 ----------------------------*/
+
+/* Recipe 1 specific styles */
+
+.recipe {
+    margin-top: 40px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: flex-start; /* Align items to the top left */
+}
+
+.recipe img {
+    max-width: 800px; /* Adjust the width as needed */
+    margin-right: 20px;
+}
+
+.recipe-content {
+    flex-grow: 1;
+}
+
+.recipe h1 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.recipe h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.recipe ul,
+.recipe ol {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.recipe li {
+    margin-bottom: 5px;
+}
+
+/* Additional CSS to move the image to the top left */
+.recipe img {
+    align-self: flex-start;
+}
+
+.recipe-content {
+    margin-top: 10px;
+}
 /*----------------------------FOOTER----------------------------*/
 
 body{
