@@ -483,30 +483,64 @@ body {
     color: white;
     cursor: pointer;
     padding: 18px;
+    padding-left: 20px;
     width: 100%;
     border: none;
-    text-align: left;
+    text-align: center;
     outline: none;
     font-size: 15px;
     vertical-align: top;
+    font-size: 20px;
         
-  }
+}
   
   .active, .collapsible:hover {
     background-color: rgb(18, 121, 18);
   }
+  .collapsible2 {
+    background-color: rgb(129, 71, 12);
+    color: white;
+    cursor: pointer;
+    padding: 25px ;
+    padding-left: 20px;
+    width: 100%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 15px;
+    vertical-align: top;
+    font-size: 20px;
+        
+}
+  
+  .active, .collapsible2:hover {
+    background-color: rgb(153, 80, 7);
+  }
   
   .content {
-    padding-left: 15%;
+    padding-left: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     background-color: white;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
   }
-  .container-of-collapsible {
-    display: flex;
-    align-items: flex-start;
+  .content h3{
+    font-size: 25px;
+  }
+  .info img {
+    align-items: center;
+    width: 200%; /* Use 100% to fill the container */
+    max-width: 1920px; /* Set a maximum width if necessary */
+    margin: auto; /* Center the image horizontally */
+    display: block; /* Remove any default spacing */
 }
+.collapsible,
+.collapsible2 {
+    margin-top: 20px;
+}
+  
 
 /*----------------------------NUTFOGRAPHICS----------------------------*/
   
