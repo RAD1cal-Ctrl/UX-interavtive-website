@@ -5,11 +5,11 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
 }
 
 body{
     min-height: 100vh;
-    background: url("#");
     display: flex;
     background-color: rgb(189, 139, 98);
 }
@@ -63,7 +63,7 @@ body{
 }
 /*----------------------------NAVBAR----------------------------*/
 
-/*----------------------------SECTION 1----------------------------*/
+/*----------------------------BANNER----------------------------*/
 
 .banner .bannerImage{
     width: 100%;
@@ -97,6 +97,7 @@ body{
     margin: 10px 0 40px;
     font-size: 14px;
     color: white;
+    padding-bottom: 10px    ;
 }
 /*TEXT*/
 
@@ -107,7 +108,7 @@ body{
     color: white;
     border: 5px solid white;
     border-radius: 20px;
-    padding: 15px 55px;
+    padding: 10px 32px;
     font-size: 25px;
     background: transparent;
     position: relative;
@@ -125,7 +126,7 @@ body{
 /*BUTTON*/
 
 
-/*----------------------------SECTION 1----------------------------*/
+/*----------------------------BANNER----------------------------*/
 
 
 /*----------------------------BEST SELLERS----------------------------*/
@@ -189,14 +190,12 @@ p{
 .aboutUs{
     width: 100%;
     height: 100vh;
-    padding: 90px 0;
-    margin: 0;
-    padding: 0;
+    margin-top: auto;
+    padding-top: 100px;
     box-sizing: border-box;
     margin-bottom: 100px;
 }
 .about{
-    
     margin: 0 auto;
     display: flex;
     align-items: left;
@@ -206,7 +205,6 @@ p{
     display: block;
     width: 50%;
     height: auto;
-    margin-right: 20px;
     margin-right: auto;
     object-fit: cover;
 }
@@ -228,6 +226,7 @@ p{
     margin-bottom: 20px;
 }
 
+/*----------------------------ABOUT US----------------------------*/
 
 
 /*---------------------------- CONTACT US----------------------------*/
@@ -239,19 +238,36 @@ p{
     height: 100vh;
     box-sizing: border-box;
     margin-bottom: 100px;
+    padding-top: 50px;
+    padding-left: 20px;
   }
   
   .Contact img {
+    display: block;
     width: 50%;
     height: auto;
-    margin-right: 20px;
+    margin-left: auto;
     object-fit: cover;
+    padding-left: 20px;
   }
   
-  .Contact .aboutText {
-    text-align: left;
-    margin-left: 250px;
+  .Contact .aboutText h1{
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 5px;
   }
+  .Contact .aboutText h2{
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 5px;
+  }
+  .Contact .aboutText p{
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+/*---------------------------- CONTACT US----------------------------*/
+
 
 /* ---------------------------- RECIPE 1 ----------------------------*/
 
@@ -264,10 +280,12 @@ p{
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     display: flex;
     align-items: flex-start; /* Align items to the top left */
+    padding-top: 100px;
 }
 
 .recipe img {
     max-width: 800px; /* Adjust the width as needed */
+    height: auto;
     margin-right: 20px;
 }
 
@@ -276,20 +294,21 @@ p{
 }
 
 .recipe h1 {
-    font-size: 28px;
+    font-size: 50px;
     font-weight: bold;
     margin-bottom: 20px;
+    padding-left: 20px;
+    text-align: center;
 }
 
 .recipe h3 {
-    font-size: 20px;
+    font-size: 25px;
     font-weight: bold;
     margin-bottom: 10px;
 }
 
-.recipe ul,
-.recipe ol {
-    margin-left: 20px;
+.recipe ul, .recipe ol {
+    margin-left: 25px;
     margin-bottom: 20px;
 }
 
@@ -309,7 +328,6 @@ p{
 
 body{
     min-height: 100vh;
-    background: url("#");
     display: flex;
     background-color: white;
     justify-content: flex-end;
@@ -457,3 +475,38 @@ body {
 
 /*----------------------------RECIPE----------------------------*/
 
+/*----------------------------NUTFOGRAPHICS----------------------------*/
+
+
+.collapsible {
+    background-color: rgb(18, 82, 18);
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    vertical-align: top;
+        
+  }
+  
+  .active, .collapsible:hover {
+    background-color: rgb(18, 121, 18);
+  }
+  
+  .content {
+    padding-left: 15%;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+  .container-of-collapsible {
+    display: flex;
+    align-items: flex-start;
+}
+
+/*----------------------------NUTFOGRAPHICS----------------------------*/
+  

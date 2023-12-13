@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=#, initial-scale=1.0">
+    <title>UX Website Project</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        
+    </style>
+</head>
+
+<body>
+
+    <!-- LOGO -->
+    <header class="header">
+        <a href="index.html" class="logo">Gourmet Nibbles</a>
+    <!-- LOGO -->
+
+    <!-- NAVBAR -->
+        <nav class="navbar">
+            <a href="index.html" class="">Home</a>
+            <a href="Recipes.html" class="">Recipes</a>
+            <a href="Product.html" class="">Products</a>
+            <a href="#aboutUs" class="">About Us</a>
+            <a href="#contactUs" class="">Contact</a>
+        </nav>
+    </header>
+    <!-- NAVBAR -->
+    <!-- BANNER -->
+    </header>
+    <section class="banner">
+        <img src="images/welcome page nuts.jpg" alt="Mixed Nuts" class="bannerImage">
+        <div class="welcomeText">
+            <h1>Infographics for Nuts</h1>            
+        </div>
+    </section>
+    <!-- BANNER -->
+
+    
+<section>
+    <h2>Collapsibles</h2>
+
+    <p>A Collapsible:</p>
+    <button type="button" class="collapsible">Open Collapsible</button>
+     <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+
+            <p>Collapsible Set:</p>
+            <button type="button" class="collapsible">Open Section 1</button>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <button type="button" class="collapsible">Open Section 2</button>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <button type="button" class="collapsible">Open Section 3</button>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+
+            <script>
+                var coll = document.getElementsByClassName("collapsible");
+                var i;
+                
+                for (i = 0; i < coll.length; i++) {
+                  coll[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var content = this.nextElementSibling;
+                    if (content.style.maxHeight){
+                      content.style.maxHeight = null;
+                    } else {
+                      content.style.maxHeight = content.scrollHeight + "px";
+                    }
+                  });
+                }
+                </script>
+            </script>
+</section>
+
+
+    
+    
+    
+    
+    <!-- FOOTER -->
+    <footer class="footer">
+        <ul class="mediaIcons">
+            <li><a href='facebook'><ion-icon name="logo-facebook"></ion-icon></a></li>
+            <li><a href='instagram'><ion-icon name="logo-instagram"></ion-icon></a></li>
+            <li><a href='#tiktok'><ion-icon name="logo-tiktok"></ion-icon></a></li>
+            <li><a href='x'><ion-icon name="logo-twitter"></ion-icon></a></li>
+            <li><a href='linkedin'><ion-icon name="logo-linkedin"></ion-icon></a></li>
+        </ul>
+        <ul class="footerMenu">
+            <li><a href="index.html" class="">Home</a></li>
+            <li><a href="Recipes.html" class="">Recipes</a></li>
+            <li><a href="Product.html" class="">Products</a></li>
+            <li><a href="#aboutUs" class="">About Us</a></li>
+            <li><a href="#contactUs" class="">Contact</a></li>
+        </ul>
+        <p>2023 All Right Reserved | Gourmet Nibbles</p>
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
